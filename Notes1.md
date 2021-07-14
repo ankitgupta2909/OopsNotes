@@ -72,7 +72,7 @@ int *ap=&a;
 - Reason why we put int *x not just pointer x when we know every pointer just takes 4/8 bytes is to get to know how many bytes to jump or traverse in one increment like +4 for int +1 for char etc.
   
 - 
-  `int i=65;    
+  int i=65;    
    char c=i;         Implicit typecasting prints A cz ascii  
    int *p=&i;  
    char *pc=&p;   throws error     
@@ -83,7 +83,7 @@ int *ap=&a;
    cout<<*pc;  Prints what is there at LSB of p   |65|-|-|-| (4 bytes of integer and we are doing only 1 byte inc in char pointer)   
    cout<<*pc+1;  right of lsb   
    cout<<*pc+2; next right of lsb  
-`
+
    What we conclude here is integers are stored reversed
 
 **Reference Variable**
@@ -94,7 +94,7 @@ It has to be intitialised in the same line.
 
 - If we return ref var or a pointer from a funtion like this
    
-   `int* fun(int a){  
+   int* fun(int a){  
        return a;  
    }  
   
@@ -107,7 +107,7 @@ It has to be intitialised in the same line.
    }
 
    int *ptr=fun(a);
-   `
+   
 
    There is a prob that memory has a scope til that function only and will be destroyed so u may get error for accessing garbage
 
