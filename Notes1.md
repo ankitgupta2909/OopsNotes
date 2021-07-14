@@ -11,10 +11,11 @@ int *ap=&a;
 
 - int *p=0; // Always reference the pointer or it will point to a random address holding garbage and may not even be in our scope..it can cause error.. referencing to 0 means null.will always cause erro but betterthan random
 
-- int a=10;
+  
+- `int a=10;
   int * pa=&a;
   pa++;     //pointer jumps 4 bytes cz its int pointer 1 for char,8 for double  it looks for next int/char/double
-
+`
 - a[i]=i[a]= *(a+i) // int a[10]; in this a is nothing but pointer to first el
 
 - int a[10];
@@ -29,17 +30,18 @@ int *ap=&a;
 **Char array**
 
 - Printing works diff if int and char array
-`code`
+`
   int ar[]={1,2,3};
   char cr[]="abc";
   cout<<ar; // Adrress of a
   cout<<cr; // String abc prints
-`code`
+`
+`
 - char a='x';
   cout<<a;      // prints x
   char *pc=&a;
   cout<<pc;     // Traverse til finds \0 nd prints example: x?/;
-
+`
 
 
 
