@@ -8,7 +8,7 @@ int *ap=&a;
 - pointer to int: 8 bytes(not fixed)
   
   (*p)++;  // Increments the value of var held by address stored in p
-<img src="pointers1.png" style="float: left; margin-right: 10px;" />
+<img src="OOPS\pointers1.PNG" style="float: left; margin-right: 10px;" />
 
 
 
