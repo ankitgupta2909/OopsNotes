@@ -50,14 +50,14 @@ int *ap=&a;
 
 - 
   void fun1(int *p){
-      cout<<*p;         //Noramlly prints
-    }
-  void fun2(int *p){
-      p=p+1;            //Doesnt change the address of p its passed by value 
-  }
-  void fun3(int *p){
-      (*p)++;               // Actually changes the value stored at address p
-  }
+      cout<<*p;         //Noramlly prints  
+    }  
+  void fun2(int *p){  
+      p=p+1;            //Doesnt change the address of p its passed by value   
+  }  
+  void fun3(int *p){  
+      (*p)++;               // Actually changes the value stored at address p  
+  }  
 
 - if i send something like 
     int *a={1,2,3,4,5,6,7,8,9};  
@@ -92,9 +92,9 @@ int *ap=&a;
 
 **Reference Variable**
 
--int a=10;
-int &b=a; // Has ref of a anychange made will be reflected on both dont hold any memory point to same
-It has to be intitialised in the same line.
+-int a=10;  
+int &b=a; // Has ref of a anychange made will be reflected on both dont hold any memory point to same  
+It has to be intitialised in the same line.  
 
 - If we return ref var or a pointer from a funtion like this
    
