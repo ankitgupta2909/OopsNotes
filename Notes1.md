@@ -70,18 +70,19 @@ int *ap=&a;
 # Dynamic Allocation
 
 - Reason why we put int *x not just pointer x when we know every pointer just takes 4/8 bytes is to get to know how many bytes to jump or traverse in one increment like +4 for int +1 for char etc.
-
-- `int i=65;\
-   char c=i;        // Implicit typecasting prints A cz ascii\
-   int *p=&i;\
-   char *pc=&p; //throws error\
-   char *pc=(char star) &p;\    //Explicit typecasting
-   cout<<p;  //Prints address of i
-   cout<<pc; //Prints till finds \0 so just A will be printed  
-   cout<<*p;  //65
-   cout<<*pc; // Prints what is there at LSB of p   |65|-|-|-| (4 bytes of integer and we are doing only 1 byte inc in char pointer)
-   cout<<*pc+1; // right of lsb 
-   cout<<*pc+2;// next right of lsb
+  
+- 
+  `int i=65;    
+   char c=i;         Implicit typecasting prints A cz ascii  
+   int *p=&i;  
+   char *pc=&p;   throws error     
+   char *pc=(char star) &p;  Explicit typecasting    
+   cout<<p;   Prints address of i 
+   cout<<pc;  Prints till finds \0 so just A will be printed   
+   cout<<*p;  65  
+   cout<<*pc;  Prints what is there at LSB of p   |65|-|-|-| (4 bytes of integer and we are doing only 1 byte inc in char pointer)   
+   cout<<*pc+1;  right of lsb   
+   cout<<*pc+2; next right of lsb  
 `
    What we conclude here is integers are stored reversed
 
