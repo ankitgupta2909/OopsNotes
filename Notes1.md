@@ -33,6 +33,7 @@ int *ap=&a;
 
   int ar[]={1,2,3};  
   char cr[]="abc";  
+  it is same as => char str[4] = {'a','b','c','/0'};  
   cout<<ar; // Adrress of  a  
   cout<<cr; // String abc prints  
 
